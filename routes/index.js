@@ -4,7 +4,7 @@ const express = require("express");
 
 const router = express.Router();
 
-const Index_model = require("../controller/Index.controller");
+const Index_model = require("../models/Index_model");
 
 // main
 router.get("/", async (req, res) => {
@@ -20,7 +20,7 @@ router.get("/", async (req, res) => {
     { label: 6 },
   ];
 
-  const testResult = await Index_model.addTest();
+  const testResult = await Index_model.getUserList();
   console.log("testResult => ", testResult);
 
   res.render("index", data);

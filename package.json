@@ -1,5 +1,5 @@
 {
-  "name": "pure-node-express",
+  "name": "pure-node-express-mysql",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -15,10 +15,7 @@
     "moment": "^2.29.3",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "mysql2": "^2.3.3",
-    "path": "^0.12.7",
-    "sequelize": "^6.19.0",
-    "sequelize-cli": "^6.4.1"
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"

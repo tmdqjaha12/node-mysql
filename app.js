@@ -38,15 +38,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", RouterIndex);
 
 // database connect
-// const database = require("./_db/db_connect.js");
+// const database = require("./models/db/db_connect.js");
 // const conn = database.conn();
-
-// database orm
-const db = require("./models/index");
-db.sequelize.sync({ force: false }).then(() => {
-  console.log("Drop and re-sync db.");
-});
-// 개발 중에는 기존 테이블을 삭제하고 데이터베이스를 다시 동기화해야 할 수 있습니다. force: true다음 코드로 사용
 
 // port설정
 app.listen(process.env.PORT, () => {
